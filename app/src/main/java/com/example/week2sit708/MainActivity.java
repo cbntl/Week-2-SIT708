@@ -31,9 +31,16 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 //Todo Button acction
+                //Todo Get the value of mEditText
                 String inputValue = myEditText.getText().toString();
-                myTextView.setText("Welcome to SIT708"+inputValue);
-                Toast.makeText(MainActivity.this, inputValue, Toast.LENGTH_SHORT).show();
+
+                //Todo Make a Toast to display inputValue.
+                Toast.makeText(MainActivity.this, "Hi Again", Toast.LENGTH_LONG).show();
+                Toast.makeText(MainActivity.this, inputValue, Toast.LENGTH_LONG).show();
+
+                //Todo Change the value ot mTextView
+                myTextView.setText("This is new text");
+                myTextView.setText("Welcome to SIT708 "+ inputValue);
                 Log.v("Check Message", "Successful Message");
             }
         });
